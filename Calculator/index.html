@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="5">
+                <input type="button" id="result" value="">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="C" id="clear"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="operation" onclick="document.getElementById('result').value+=value" value="7"></td>
+            <td><input type="button" class="operation" onclick="document.getElementById('result').value+=value" value="8"></td>
+            <td><input type="button" class="operation" onclick="document.getElementById('result').value+=value" value="9"></td>
+            <td><input type="button" class="operator" onclick="calc(value)" value="+"></td>
+            <td><input type="button" class="operator" onclick="calc(value)" value="-"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="operation" onclick="document.getElementById('result').value+=value" value="4"></td>
+            <td><input type="button" class="operation" onclick="document.getElementById('result').value+=value" value="5"></td>
+            <td><input type="button" class="operation" onclick="document.getElementById('result').value+=value" value="6"></td>
+            <td><input type="button" class="operator" onclick="calc(value)" value="*"></td>
+            <td><input type="button" class="operator" onclick="calc(value)" value="/"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="operation" onclick="document.getElementById('result').value+=value" value="1"></td>
+            <td><input type="button" class="operation" onclick="document.getElementById('result').value+=value" value="2"></td>
+            <td><input type="button" class="operation" onclick="document.getElementById('result').value+=value" value="3"></td>
+            <td><input type="button" class="operation" onclick="document.getElementById('result').value+=value" value="0"></td>
+            <td><input type="button" class="=" onclick="final()" value="="></td>
+        </tr>
+    </table>
+</body>
+
+</html>
+<script src="myjs.js"></script>

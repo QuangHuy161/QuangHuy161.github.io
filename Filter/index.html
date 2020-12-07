@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="app">
+        <div id="tool">
+            <div class="tool">
+                <p>blur :</p>
+                <input type="range" class="range" name="blur" value="0" min="0" max="10" data-sizing="px" id="">
+            </div>
+            <div class="tool">
+                <p>brightness :</p>
+                <input type="range" class="range" name="brightness" value="100" min="0" max="100" data-sizing="%" id="">
+            </div>
+            <div class="tool">
+                <p>contrast :</p>
+                <input type="range" class="range" name="contrast" value="100" min="0" max="100" data-sizing="%" id="">
+            </div>
+            <div class="tool">
+                <p>grayscale :</p>
+                <input type="range" class="range" name="grayscale" value="0" min="0" max="100" data-sizing="%" id="">
+
+            </div>
+            <div class="tool">
+                <p>hue-rotate :</p>
+                <input type="range" class="range" name="hue-rotate" value="0" min="0" max="360" data-sizing="deg" id="">
+
+            </div>
+            <div class="tool">
+                <p>invert :</p>
+                <input type="range" class="range" name="invert" value="0" min="0" max="100" data-sizing="%" id="">
+
+            </div>
+            <div class="tool">
+                <p>opacity :</p>
+                <input type="range" class="range" name="opacity" value="100" min="0" max="100" data-sizing="%" id="">
+
+            </div>
+            <div class="tool">
+                <p>saturate :</p>
+                <input type="range" class="range" name="saturate" value="100" min="0" max="100" data-sizing="%" id="">
+
+            </div>
+            <div class="tool">
+                <p>sepia :</p>
+                <input type="range" class="range" name="sepia" value="0" min="0" max="100" data-sizing="%" id="">
+
+            </div>
+            <div class="tool">
+                <p>File input :</p>
+                <input type="file" accept=".jpg, .jpeg, .png" name="file_choose" id="url" onchange="readURL(this)">
+            </div>
+        </div>
+        <div class="display">
+            <div class="image">
+                <img id="pic" src="picture/974622.jpg" alt="4k picture" width="500" height="auto" accept="image/gif,image/jpg,image/jpeg,image/png">
+            </div>
+            <p>CODE CSS:</p>
+            <div id="code">
+                <div id="copy_text">filter: ;</div>
+                <div class="copy" data-clipboard-target="#copy_text" data-clipboard-action="copy">Copy</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
+<script src="myjs.js"></script>
+<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>

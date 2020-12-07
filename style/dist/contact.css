@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCv6KVjbNBYlgoC1CzTtw.ttf) format('truetype');
+}
+#contact {
+  height: 110vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#contact .row img {
+  width: 50vw;
+}
+@media (max-width: 768px) {
+  #contact .row img {
+    width: 80vw;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transform: translate(0, -50%);
+  }
+}
+#contact .form {
+  padding: 30px 20px;
+  margin: 0;
+  border: 10px solid white;
+  box-shadow: 0 0 0 7px #575757, 9px 9px 7px #616161;
+  background-color: #ecfff8;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+#contact .form h1 {
+  color: #5adada;
+}
+#contact .form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#contact .form form label {
+  font-size: 17px;
+  font-weight: 500;
+  color: #5adada;
+}
+#contact .form form input {
+  width: 300px;
+  padding: 1vw;
+  border: none;
+  border-bottom: 4px solid transparent;
+  transition: ease-in 0.2s;
+  outline: none;
+  position: relative;
+}
+#contact .form form input::placeholder {
+  padding: 12px;
+  font-size: 13px;
+  color: #c9d8d3;
+}
+@media (max-width: 426px) {
+  #contact .form form input {
+    width: 75vw;
+  }
+}
+#contact .form form input:focus {
+  border-bottom: 4px solid #5adada;
+}
+#contact .form form input[type="submit"] {
+  margin-top: 60px;
+  border: 3px solid #5adada;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 #5adada;
+  font-weight: 500;
+  font-size: 20px;
+  color: #5adada;
+}
+#contact .form form input[name="name"]::before {
+  content: "name";
+  position: absolute;
+  left: -70px;
+  top: 0;
+  width: 70px;
+  height: 100%;
+}
+#contact .form form textarea {
+  height: 16vh;
+  border: none;
+  outline: none;
+  padding: 12px;
+}
+#contact .form form textarea::placeholder {
+  font-size: 13px;
+  color: #c9d8d3;
+}
+#contact .form form textarea:focus {
+  border-bottom: 4px solid #6df1c5;
+}
+#contact .form form input[type="submit"]:hover {
+  box-shadow: none;
+}
+#contact .form form .invalid {
+  border: 1px solid crimson;
+}
+#contact .form form .valid {
+  border: 1px solid #4ca84c;
+}

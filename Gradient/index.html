@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="flex-color-container">
+        <div class="flex">
+            <div class="color1"></div>
+            <div class="form-group">
+                <label for="from-color">from</label>
+                <input type="color" name="" id="from-color">
+            </div>
+        </div>
+        <div class="flex">
+            <div class="color2"></div>
+            <div class="form-group">
+                <label for="to-color">to </label>
+                <input type="color" name="color" id="to-color">
+            </div>
+        </div>
+        <div class="flex">
+            <div class="button" onclick="createGradient()">show gradient</div>
+        </div>
+    </div>
+    <div class="container-color-gradient">
+        <div class="box-gradient-color">
+            <div id="gradient-color"></div>
+            <div class="box-code-css">
+                <div id="code-css"></div>
+                <div class="copy-css" data-clipboard-action="copy">Copy</div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="assets/js/app.js "></script>

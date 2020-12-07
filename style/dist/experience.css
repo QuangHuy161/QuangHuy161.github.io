@@ -1,0 +1,138 @@
+:root {
+  --color-main: #0a6c7e;
+  --color-sub: #1499b1;
+  --background-left: #5adada;
+  --background-right: #ecfff8;
+}
+#experience {
+  font-family: 'Ubuntu', sans-serif;
+}
+#experience .text {
+  color: var(--background-right);
+}
+#experience .title-child,
+#experience .name {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  position: relative;
+}
+#experience .name {
+  margin: 15px 0 0 0;
+}
+#experience .title-child {
+  background-color: var(--background-left);
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  padding: 5px;
+}
+#experience .title-child::after {
+  height: 100%;
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 0;
+  width: 20px;
+  background-color: var(--background-left);
+  clip-path: polygon(0 0, 100% 50%, 0 100%, 0% 50%);
+}
+#experience .title {
+  position: relative;
+  padding: 13px 0;
+}
+#experience .title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -100%;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-main);
+  transform: translateX(-100%);
+}
+#experience .box {
+  position: relative;
+}
+#experience .box .horizontal {
+  width: 2px;
+  height: 90%;
+  background-color: var(--color-main);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+#experience .box .horizontal .point {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: var(--background-left);
+  left: -4px;
+  transform: translateY(-50%) rotateZ(45deg);
+  top: 50%;
+  border: 2px solid var(--color-main);
+}
+#experience .project a {
+  text-decoration: none;
+}
+#experience .project a:hover {
+  color: var(--color-main);
+  font-weight: 600;
+  transform: translateX(10px);
+}
+#experience .info-left {
+  background-color: var(--background-left);
+}
+#experience .info-left .avatar .avatar-photo img {
+  width: 80%;
+  border-right: 15px solid var(--color-main);
+  border-top: 15px solid var(--color-main);
+  border-left: 15px solid var(--color-sub);
+  border-bottom: 15px solid var(--color-sub);
+  outline: none;
+  border-radius: 50%;
+  box-shadow: -7px 7px 7px rgba(0, 0, 0, 0.466);
+}
+#experience .info-left .avatar .introduce {
+  color: var(--color-sub);
+}
+#experience .info-right {
+  background-color: var(--background-right);
+}
+#experience .info-right .text {
+  color: black;
+}
+#experience .info-right .title-top h1 {
+  text-align: center;
+  margin: 23px 0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#experience .info-right .title-top .stars {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+#experience .info-right .title-top .stars svg {
+  fill: #11455a;
+  background-color: #f1f1f1;
+  padding: 2px;
+}
+#experience .info-right .title-top .stars svg:nth-child(2) {
+  transform: scale(1.4);
+}
+#experience .info-right .title-top .stars::before {
+  content: "";
+  z-index: -1;
+  height: 10px;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  box-shadow: 0 3px 0 2px #11455a;
+  border-radius: 100%;
+}

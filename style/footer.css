@@ -1,0 +1,64 @@
+footer {
+  background-color: #0a6c7e;
+  padding: 3vh 0 0 0;
+}
+footer .row {
+  margin: 0;
+  padding: 0 7vw;
+  color: #c5c5c5;
+}
+footer .row h4 {
+  color: white;
+  border-bottom: 2px solid #3dbfd6;
+}
+footer .row p {
+  color: #252525;
+  font-size: 14px;
+  text-align: justify;
+}
+footer .row ul {
+  padding-left: 1.5vw;
+}
+footer .row ul li a {
+  color: #252525;
+  font-size: 14px;
+  text-decoration: none;
+  transition: linear 0.2s;
+}
+footer .row ul li a svg {
+  fill: #00252d;
+}
+footer .row ul li a span {
+  margin-left: 1vw;
+}
+footer .row ul li a:hover {
+  color: #dfdfdf;
+}
+footer .copy-right {
+  background: #000000;
+  padding: 0 7vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .copy-right .left {
+  color: rgba(44, 44, 44, 0.815);
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 0;
+}
+footer .copy-right .right ul {
+  margin: 0;
+}
+footer .copy-right .right ul li {
+  display: inline-block;
+  margin-right: 1vw;
+}
+footer .copy-right .right ul li a svg {
+  fill: #424242;
+  transition: cubic-bezier(0, 0.65, 0.47, 1.44) 0.2s;
+}
+footer .copy-right .right ul li a:hover svg {
+  transform: translateX(-7px);
+  fill: #686868;
+}

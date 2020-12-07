@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --color-tool: rgba(100, 100, 100, 0.74);
+    --blur: 0px;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:768px) {
+    .app {
+        grid-template-columns: 100%;
+    }
+}
+
+#tool {
+    display: grid;
+    justify-content: center;
+}
+
+.tool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool p {
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    color: var(--color-tool);
+    text-align: end;
+    margin-right: 20px;
+}
+
+.tool input[type="range"] {
+    width: 200px;
+    height: 3px;
+    background-color: var(--color-tool);
+}
+
+#code {
+    border: 2px solid var(--color-tool);
+    border-radius: 4px;
+    line-height: 30px;
+    padding: 4px 20px;
+    height: 30px;
+    margin: 20px 0;
+    position: relative;
+}
+
+#code .copy {
+    position: absolute;
+    right: 0;
+    background-color: aquamarine;
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: linear 0.2s;
+    top: 0;
+}
+
+#code .copy:hover {
+    background-color: rgb(195, 255, 235);
+}
+
+.image {
+    margin: 50px 30px;
+    padding: 20px;
+    border: 10px solid rgb(138, 138, 138);
+}
+
+#pic {
+    border-radius: 20px;
+    width: 100%;
+}

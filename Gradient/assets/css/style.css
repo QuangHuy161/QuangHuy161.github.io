@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    background-color: rgba(240, 240, 240, 0.74);
+}
+
+.flex-color-container {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    align-items: center;
+}
+
+.flex-color-container .flex {
+    margin: 50px auto;
+}
+
+.flex .button {
+    padding: 6px 15px;
+    border: none;
+    background-color: #6ba4d6;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.flex .button:hover {
+    transform: scale(1.2);
+    transition: ease 0.6s;
+    border: none;
+}
+
+.flex .button:active {
+    transform: scale(1.2);
+    border: none;
+}
+
+.form-group label {
+    color: #2a6da8;
+}
+
+.form-group input[type="color"] {
+    width: 50px;
+    height: 30px;
+}
+
+.container-color-gradient {
+    background-color: rgb(207, 207, 207);
+    padding: 20px;
+}
+
+.box-gradient-color {
+    width: 80%;
+    margin: 0 auto;
+    border: 20px solid white;
+    background-color: white;
+    box-shadow: 2px 2px 15px gray;
+}
+
+#gradient-color {
+    height: 400px;
+}
+
+.box-code-css {
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+.box-code-css .copy-css {
+    padding: 6px 12px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #d3731a;
+    font-weight: 800;
+    color: white;
+}
+
+.box-code-css .copy-css:hover {
+    background-color: #2a6da8;
+}
+
+#code-css {
+    border: 2px solid gray;
+    height: auto;
+    background-color: rgb(240, 240, 240);
+    box-shadow: inset 0px 0px 9px rgb(182, 182, 182);
+    padding: 10px 24px;
+    font-weight: bold;
+}

@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9e0e9;
+}
+
+table {
+    width: 500px;
+    padding: 100px 25px;
+    margin: 0 auto;
+    border-spacing: 5px;
+    background: #25272b;
+    border-radius: 20px;
+}
+
+@media(max-width: 768px) {
+    table {
+        width: 90vw;
+    }
+}
+
+table tr td input {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    line-height: 60px;
+    cursor: pointer;
+    margin: 4px;
+    background: #52575d;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+table tr td input:hover,
+table tr td input:active,
+table tr td input:focus {
+    background: #dbdbdb;
+    color: black;
+}
+
+table tr td:nth-child(4) input,
+table tr td:nth-child(5) input {
+    background: #fddb3a;
+    color: black;
+}
+
+table tr td:nth-child(4):hover input,
+table tr td:nth-child(5):hover input {
+    background: #f8f1cd;
+}
+
+tr:nth-child(1) td input,
+tr:nth-child(1) td input:hover {
+    background: #f6f4e6;
+    cursor: context-menu;
+    color: black;
+    border: 2px solid #fddb3a;
+    position: relative;
+}
+
+tr:nth-child(1) td input::after {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    background: red;
+    content: "";
+}
+
+table tr:last-child td:nth-child(3) input {
+    background: crimson;
+}

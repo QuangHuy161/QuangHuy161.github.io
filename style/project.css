@@ -1,5 +1,5 @@
 #project {
-  background-color: #ecfff8;
+  background: linear-gradient(101deg, #e1fff4, #ffffff00);
   padding-bottom: 30px;
 }
 #project .title h1 {
@@ -16,7 +16,7 @@
 }
 #project .title .stars svg {
   fill: #11455a;
-  background-color: #f1f1f1;
+  background-color: #f1fffa;
   padding: 2px;
 }
 #project .title .stars svg:nth-child(2) {

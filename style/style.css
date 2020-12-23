@@ -557,13 +557,15 @@ nav.container-fluid .row-nav .active a .task-3 {
 }
 #about .auth .social-media {
   padding: 20px 60px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 30px;
   width: 80vw;
   margin: 0 auto;
 }
 @media (max-width: 767px) {
   #about .auth .social-media {
-    flex-direction: column;
+    grid-template-columns: revert;
   }
 }
 #about .auth .social-media .social-icon {

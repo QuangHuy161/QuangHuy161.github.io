@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background: linear-gradient(114deg, #a6fffb 0%, white 43%);
 }
 #contact .row img {
   width: 50vw;

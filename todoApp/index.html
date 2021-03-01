@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="nav-horizontal">
+            <div class="nav-menu-icon ">
+                <div class="icon m-1 pointer">
+                    <div class="nav-menu-icon-line"></div>
+                    <div class="nav-menu-icon-line"></div>
+                    <div class="nav-menu-icon-line"></div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-links m-2 heading time date"><a href="" rel="noopener noreferrer">day</a> </li>
+                <li class="nav-links m-2 heading time week"><a href="" rel="noopener noreferrer">week</a> </li>
+                <li class="nav-links m-2 heading time month"><a href="" rel="noopener noreferrer">month</a> </li>
+                <li class="nav-links m-2 heading time year"><a href="" rel="noopener noreferrer">year</a> </li>
+                <li class="nav-links m-2 heading time"><a href="" rel="noopener noreferrer">reset</a> </li>
+            </ul>
+        </div>
+        <div class="content-main">
+            <div class="box p-3">
+                <div class="top-create p-2">
+                    <form action="">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title">
+                    </form>
+                    <form action="">
+                        <label for="time-start">Start</label>
+                        <input type="time" name="tS" id="time-start" value="00:00">
+                        <input type="date" name="dS" id="date-start">
+                    </form>
+                    <form action="">
+                        <label for="time-end">End</label>
+                        <input type="time" name="tE" id="time-end" value="00:00">
+                        <input type="date" name="dE" id="date-end">
+                    </form>
+                    <button type="submit">ADD</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="loading">
+        <div class="dot-set">
+            <div class="dot-sub dot-sub-1"></div>
+            <div class="dot-sub dot-sub-2"></div>
+            <div class="dot-sub dot-sub-3"></div>
+            <div class="dot-sub dot-sub-4"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="functions.js"></script>
+<script src="animations.js"></script>

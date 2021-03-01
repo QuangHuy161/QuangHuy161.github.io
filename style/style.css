@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/balsamiqsans/v2/P5sEzZiAbNrN8SB3lQQX7Pnc8dk.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/balsamiqsans/v3/P5sEzZiAbNrN8SB3lQQX7Pnc8dk.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Ubuntu';
@@ -146,10 +146,13 @@ nav.container-fluid .row-nav ul.nav-links > li .project {
   position: absolute;
   padding: 14px 23px;
   width: 200px;
+  top: 22px;
+  left: 0;
   background-color: white;
-  box-shadow: 2px 3px 7px #6d6d6d;
-  border-radius: 10px;
+  box-shadow: 4px 5px 10px #a7a7a793;
+  border-radius: 6px;
   visibility: hidden;
+  z-index: 1;
 }
 nav.container-fluid .row-nav ul.nav-links > li .project li a {
   text-decoration: none;
@@ -159,13 +162,16 @@ nav.container-fluid .row-nav ul.nav-links > li .project li a {
 nav.container-fluid .row-nav ul.nav-links > li .project::after {
   content: "";
   position: absolute;
-  top: -40px;
-  left: 50%;
+  top: -20px;
+  left: calc(20px + 6px);
   margin-left: -20px;
-  border-bottom: 20px solid white;
-  border-top: 20px solid transparent;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
+  border-bottom: 10px solid white;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+nav.container-fluid .row-nav ul.nav-links > li:hover .project {
+  visibility: visible;
 }
 nav.container-fluid .row-nav .visible {
   transform: translate(0, 0) !important;
@@ -558,7 +564,7 @@ nav.container-fluid .row-nav .active a .task-3 {
 #about .auth .social-media {
   padding: 20px 60px;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
   width: 80vw;
   margin: 0 auto;

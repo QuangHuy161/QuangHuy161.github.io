@@ -144,7 +144,6 @@ nav.container-fluid .row-nav ul.nav-links > li > a:hover::after {
 }
 nav.container-fluid .row-nav ul.nav-links > li .project {
   position: absolute;
-  padding: 14px 23px;
   width: 200px;
   top: 22px;
   left: 0;
@@ -153,6 +152,12 @@ nav.container-fluid .row-nav ul.nav-links > li .project {
   border-radius: 6px;
   visibility: hidden;
   z-index: 1;
+}
+nav.container-fluid .row-nav ul.nav-links > li .project li{
+  padding: 5px 10px;
+}
+nav.container-fluid .row-nav ul.nav-links > li .project li:hover{
+  background: #b0c9e1;
 }
 nav.container-fluid .row-nav ul.nav-links > li .project li a {
   text-decoration: none;

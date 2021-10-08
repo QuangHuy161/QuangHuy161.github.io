@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/social.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <meta name="google-signin-client_id" content="471597847358-fqcv5df29pblrjnupiablv8ado91md8u.apps.googleusercontent.com">
+    <!-- <script type="module" src="index.js"></script> -->
+</head>
+
+<body>
+    <div class="main_screen">
+        <div class="logo">
+            <img src="img/logo.png" alt="" srcset="">
+        </div>
+
+
+    </div>
+    <div class="copyright">
+        <img src="img/Copyright.png" alt="" srcset="">
+    </div>
+    <div class="icon_return">
+        <a href="index.html">
+            <svg width="63" height="40" viewBox="0 0 63 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M56.3684 6.66669V16.6667H12.6994L22.2489 7.06669C23.542 5.76669 23.542 3.66669 22.2489 2.36669C20.9557 1.06669 18.8668 1.06669 17.5736 2.36669L2.35415 17.6667C1.06099 18.9667 1.06099 21.0667 2.35415 22.3667L17.5736 37.6667C18.8668 38.9667 20.9557 38.9667 22.2489 37.6667C23.542 36.3667 23.542 34.2667 22.2489 32.9667L12.6994 23.3334H59.6841C61.5078 23.3334 62.9999 21.8334 62.9999 20V6.66669C62.9999 4.83336 61.5078 3.33336 59.6841 3.33336C57.8605 3.33336 56.3684 4.83336 56.3684 6.66669Z" fill="#1D1D1D"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="63" height="40" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+        </a>
+    </div>
+
+
+    <div class="main">
+        <div class="main_show">
+            <div class="left left_main ">
+                <div class="article_list hide_scrollbar">
+                </div>
+            </div>
+            <div class="left left_post none">
+                <p>required(<span class=required>*</span>)</p>
+                <form action="/article" method="post">
+                    <label for="caption">Caption(<span class="required">*</span>)</label>
+                    <input type="text" id="ct" name="caption" placeholder="write caption..." required>
+                    <label for="link">Link</label>
+                    <input type="text" name="link" placeholder="Enter link...">
+                    <label for="text">File(image or video)</label>
+                    <input type="file" name="img" accept="image/gif, image/jpeg, image/png">
+
+                </form>
+                <button class="button button_post " style="color: black;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 28H8C7.73478 28 7.48043 27.8946 7.29289 27.7071C7.10536 27.5196 7 27.2652 7 27V4C7 3.73478 7.10536 3.48043 7.29289 3.29289C7.48043 3.10536 7.73478 3 8 3H24C24.2652 3 24.5196 3.10536 24.7071 3.29289C24.8946 3.48043 25 3.73478 25 4V10.17C25 10.4352 24.8946 10.6896 24.7071 10.8771C24.5196 11.0646 24.2652 11.17 24 11.17C23.7348 11.17 23.4804 11.0646 23.2929 10.8771C23.1054 10.6896 23 10.4352 23 10.17V5H9V26H23V15.83C23 15.5648 23.1054 15.3104 23.2929 15.1229C23.4804 14.9354 23.7348 14.83 24 14.83C24.2652 14.83 24.5196 14.9354 24.7071 15.1229C24.8946 15.3104 25 15.5648 25 15.83V27C25 27.2652 24.8946 27.5196 24.7071 27.7071C24.5196 27.8946 24.2652 28 24 28Z" fill="#2E3192"/>
+                    <path d="M16.343 21.657C16.1946 21.6571 16.048 21.6243 15.9139 21.5608C15.7798 21.4973 15.6615 21.4048 15.5676 21.2899C15.4737 21.175 15.4065 21.0407 15.3709 20.8966C15.3354 20.7525 15.3323 20.6023 15.362 20.457L16.069 16.921C16.1079 16.7273 16.2032 16.5495 16.343 16.41L25.535 7.21796C25.7225 7.03049 25.9768 6.92517 26.242 6.92517C26.5072 6.92517 26.7615 7.03049 26.949 7.21796L29.778 10.047C29.9655 10.2345 30.0708 10.4888 30.0708 10.754C30.0708 11.0191 29.9655 11.2734 29.778 11.461L20.586 20.653C20.4465 20.7928 20.2687 20.8881 20.075 20.927L16.539 21.634C16.4745 21.6476 16.4089 21.6553 16.343 21.657ZM17.971 17.614L17.617 19.383L19.386 19.029L27.657 10.758L26.242 9.34296L17.971 17.614Z" fill="#FF931E"/>
+                    <path d="M18 9H12C11.7348 9 11.4804 8.89464 11.2929 8.70711C11.1054 8.51957 11 8.26522 11 8C11 7.73478 11.1054 7.48043 11.2929 7.29289C11.4804 7.10536 11.7348 7 12 7H18C18.2652 7 18.5196 7.10536 18.7071 7.29289C18.8946 7.48043 19 7.73478 19 8C19 8.26522 18.8946 8.51957 18.7071 8.70711C18.5196 8.89464 18.2652 9 18 9Z" fill="#2E3192"/>
+                    <path d="M16 13H12C11.7348 13 11.4804 12.8946 11.2929 12.7071C11.1054 12.5196 11 12.2652 11 12C11 11.7348 11.1054 11.4804 11.2929 11.2929C11.4804 11.1054 11.7348 11 12 11H16C16.2652 11 16.5196 11.1054 16.7071 11.2929C16.8946 11.4804 17 11.7348 17 12C17 12.2652 16.8946 12.5196 16.7071 12.7071C16.5196 12.8946 16.2652 13 16 13Z" fill="#2E3192"/>
+                    </svg>
+                    <span>POST</span>
+                </buton>
+                
+            </div>
+            <div class="left left_user none">
+                <div class="form_user">
+                    <div class="avatar">
+                        <img src="img/avatar.jpg" alt="avatar" srcset="">
+                    </div>
+                    <div class="name"> 
+                        <h3>Nguyễn Quang Huy</h3>
+                    </div>
+                    <div class="update">
+                        <form >
+                            <label  for="ho">Ho</label>
+                            <input type="checkbox" name="ho" id="1">
+                            <label  for="sot">Sốt</label>
+                            <input type="checkbox" name="sot" id="2">
+                            <label  for="nhucdau">Nhức Đầu</label>
+                            <input type="checkbox" name="nhucdau" id="3">
+                            <label  for="metmoi">Mệt mỏi</label>
+                            <input type="checkbox" name="metmoi" id="4">
+                            <label  for="matvigiac">Mất vị giác</label>
+                            <input type="checkbox" name="matvigiac" id="5">
+                            <label  for="nhietdo">Nhiệt độ</label>
+                            <input type="number" name="nhietdo" id="6" min="35" max="45" step="0.1" required>
+                        </form>
+                        <button class="button button_update"  >UPDATE</button>
+            </div>
+        </div>
+        <div class="status hide_scrollbar">
+
+        </div>
+    </div>
+    <div class="left left_article hide_scrollbar none">
+        <div class="article">
+            <div class="article_top">
+                <div class="user">
+                    <div class="avat_img">
+                        <img src="img/avatar.jpg" alt="avatar" srcset="">
+
+                    </div>
+                    <span class="name">Nguyễn Quang Huy</span>
+                </div>
+                <div class="dot_icon">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="article_content">
+                <div class="caption">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ...</p>
+                </div>
+                <div class="link">
+                    <a href=""></a>
+                </div>
+                <div class="file">
+                    <img src="img/file_input.png" alt="">
+                </div>
+            </div>
+            <div class="article_bottom">
+                <div class="react">
+                    <div class="heart">
+                        <span class="icon">
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4453 4.83205L12 5.20185L12.5547 4.83205L17.9334 1.24623L23 5.46838V11.5316L12 20.6983L1 11.5316V5.46838L6.06657 1.24623L11.4453 4.83205Z" fill="#FF7676" stroke="black" stroke-width="2"/>
+                                        </svg>
+                                                                                </span>
+                        <span value="1">1</span>
+                    </div>
+                    <div class="comment">
+                        <span class="icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 14C20 14.552 19.552 15 19 15C18.448 15 18 14.552 18 14C18 13.448 18.448 13 19 13C19.552 13 20 13.448 20 14ZM17 14C17 14.552 16.552 15 16 15C15.448 15 15 14.552 15 14C15 13.448 15.448 13 16 13C16.552 13 17 13.448 17 14ZM14 14C14 14.552 13.552 15 13 15C12.448 15 12 14.552 12 14C12 13.448 12.448 13 13 13C13.552 13 14 13.448 14 14ZM19.415 18.946C18.415 19.202 17.426 19.428 16.091 19.428C12.626 19.428 9 17.363 9 14.005C9 10.877 12.14 8.333 16 8.333C19.844 8.333 23 10.875 23 14.005C23 15.596 22.354 16.532 21.519 17.532L22.358 20.218L19.415 18.946ZM6.042 15.571L1.653 17.467L2.909 13.455C1.788 12.114 1 10.79 1 8.756C1 4.479 5.262 1 10.5 1C15.518 1 19.628 4.194 19.967 8.222C18.777 7.656 17.416 7.333 16 7.333C11.801 7.333 8 10.13 8 14.005C8 14.717 8.147 15.405 8.411 16.054C7.458 15.928 6.865 15.782 6.042 15.571ZM24 14.005C24 11.833 22.801 9.99 20.998 8.795L21 8.756C21 3.67 16.012 0 10.5 0C4.954 0 0 3.698 0 8.756C0 10.55 0.646 12.312 1.791 13.678L0.047 19.25L6.125 16.625C7.107 16.878 8.057 17.032 8.975 17.114C10.292 19.067 12.851 20.428 16.091 20.428C17.11 20.428 18.196 20.293 19.333 20L23.964 22L22.636 17.755C23.507 16.713 24 15.371 24 14.005Z" fill="black"/>
+                                        </svg>
+
+                                    </span>
+                        <span value="1">1</span>
+                    </div>
+                </div>
+                <div class="share">
+                    <span class="button_share">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM13 15.889V13.666C13 13.666 9.22 13.552 6 16.999C7.513 10.412 13 9.221 13 9.221V7L18 11.425L13 15.889Z" fill="#1D8B6A"/>
+                                    </svg>
+                                    
+                            </span>
+                </div>
+            </div>
+            <div class="choices none">
+                <div class="button button_edit">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.363 8.464L19.796 9.895L7.12598 22.564L0.000976562 24L1.43998 16.873L14.105 4.205L15.536 5.636L3.28098 17.86L2.55498 21.444L6.13898 20.721L18.363 8.464ZM18.307 0L15.492 2.817L21.183 8.509L24 5.688L18.307 0V0ZM5.98898 18.718L17.302 7.402L16.597 6.695L5.28398 18.009L5.98898 18.718Z" fill="black"/>
+                                </svg>
+
+                    <span>Edit</span>
+                </div>
+                <div class="button button_remove">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.662 23L0.293 17.635C0.098 17.44 0 17.185 0 16.928C0 16.672 0.098 16.416 0.293 16.221L15.222 1.293C15.417 1.099 15.673 1 15.929 1C16.184 1 16.441 1.099 16.636 1.293L23.707 8.366C23.903 8.561 24 8.817 24 9.074C24 9.33 23.903 9.585 23.707 9.781L12.491 21H18.005V23H5.662ZM9.319 21L3.833 15.514L2.414 16.928L6.49 21H9.319ZM15.924 3.419L5.247 14.099L10.905 19.758L21.581 9.076L15.924 3.419Z" fill="black"/>
+                                </svg>
+
+                    <span>Remove</span>
+                </div>
+            </div>
+        </div>
+        <div class="add_cmt cmt">
+            <div class="user">
+                <div class="avat_img">
+                    <img src="img/avatar.jpg" alt="avatar" srcset="">
+
+                </div>
+                <span class="name">Nguyễn Quang Huy</span>
+            </div>
+            <div class="input input_cmt">
+                <input type="text" name="" id="cmt" placeholder="write your comment">
+            </div>
+        </div>
+        <div class="list_cmt ">
+
+            <div class="cmt">
+                <div class="user">
+                    <div class="avat_img">
+                        <img src="" alt="avatar" srcset="">
+
+                    </div>
+                    <span class="name">Nguyễn Quang Huy</span>
+                    <div class="dot_icon">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="choices none">
+                        <div class="button button_edit">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.363 8.464L19.796 9.895L7.12598 22.564L0.000976562 24L1.43998 16.873L14.105 4.205L15.536 5.636L3.28098 17.86L2.55498 21.444L6.13898 20.721L18.363 8.464ZM18.307 0L15.492 2.817L21.183 8.509L24 5.688L18.307 0V0ZM5.98898 18.718L17.302 7.402L16.597 6.695L5.28398 18.009L5.98898 18.718Z" fill="black"/>
+                                        </svg>
+
+                            <span>Edit</span>
+                        </div>
+                        <div class="button button_remove">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.662 23L0.293 17.635C0.098 17.44 0 17.185 0 16.928C0 16.672 0.098 16.416 0.293 16.221L15.222 1.293C15.417 1.099 15.673 1 15.929 1C16.184 1 16.441 1.099 16.636 1.293L23.707 8.366C23.903 8.561 24 8.817 24 9.074C24 9.33 23.903 9.585 23.707 9.781L12.491 21H18.005V23H5.662ZM9.319 21L3.833 15.514L2.414 16.928L6.49 21H9.319ZM15.924 3.419L5.247 14.099L10.905 19.758L21.581 9.076L15.924 3.419Z" fill="black"/>
+                                        </svg>
+
+                            <span>Remove</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="cmt_cont">bài viết thật hữu ích</p>
+            </div>
+            <div class="cmt">
+                <div class="user">
+                    <div class="avat_img">
+                        <img src="img/avatar.jpg" alt="avatar" srcset="">
+
+                    </div>
+                    <span class="name">Nguyễn Quang Huy</span>
+                    <div class="dot_icon">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="choices none">
+                        <div class="button button_edit">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.363 8.464L19.796 9.895L7.12598 22.564L0.000976562 24L1.43998 16.873L14.105 4.205L15.536 5.636L3.28098 17.86L2.55498 21.444L6.13898 20.721L18.363 8.464ZM18.307 0L15.492 2.817L21.183 8.509L24 5.688L18.307 0V0ZM5.98898 18.718L17.302 7.402L16.597 6.695L5.28398 18.009L5.98898 18.718Z" fill="black"/>
+                                        </svg>
+
+                            <span>Edit</span>
+                        </div>
+                        <div class="button button_remove">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.662 23L0.293 17.635C0.098 17.44 0 17.185 0 16.928C0 16.672 0.098 16.416 0.293 16.221L15.222 1.293C15.417 1.099 15.673 1 15.929 1C16.184 1 16.441 1.099 16.636 1.293L23.707 8.366C23.903 8.561 24 8.817 24 9.074C24 9.33 23.903 9.585 23.707 9.781L12.491 21H18.005V23H5.662ZM9.319 21L3.833 15.514L2.414 16.928L6.49 21H9.319ZM15.924 3.419L5.247 14.099L10.905 19.758L21.581 9.076L15.924 3.419Z" fill="black"/>
+                                        </svg>
+
+                            <span>Remove</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="cmt_cont">bài viết thật hữu ích</p>
+            </div>
+            <div class="cmt">
+                <div class="user">
+                    <div class="avat_img">
+                        <img src="" alt="avatar" srcset="">
+
+                    </div>
+                    <span class="name">Nguyễn Quang Huy</span>
+                    <div class="dot_icon">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="choices none">
+                        <div class="button button_edit">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.363 8.464L19.796 9.895L7.12598 22.564L0.000976562 24L1.43998 16.873L14.105 4.205L15.536 5.636L3.28098 17.86L2.55498 21.444L6.13898 20.721L18.363 8.464ZM18.307 0L15.492 2.817L21.183 8.509L24 5.688L18.307 0V0ZM5.98898 18.718L17.302 7.402L16.597 6.695L5.28398 18.009L5.98898 18.718Z" fill="black"/>
+                                        </svg>
+
+                            <span>Edit</span>
+                        </div>
+                        <div class="button button_remove">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.662 23L0.293 17.635C0.098 17.44 0 17.185 0 16.928C0 16.672 0.098 16.416 0.293 16.221L15.222 1.293C15.417 1.099 15.673 1 15.929 1C16.184 1 16.441 1.099 16.636 1.293L23.707 8.366C23.903 8.561 24 8.817 24 9.074C24 9.33 23.903 9.585 23.707 9.781L12.491 21H18.005V23H5.662ZM9.319 21L3.833 15.514L2.414 16.928L6.49 21H9.319ZM15.924 3.419L5.247 14.099L10.905 19.758L21.581 9.076L15.924 3.419Z" fill="black"/>
+                                        </svg>
+
+                            <span>Remove</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="cmt_cont">bài viết thật hữu ích</p>
+            </div>
+            <div class="cmt">
+                <div class="user">
+                    <div class="avat_img">
+                        <img src="img/avatar.jpg" alt="avatar" srcset="">
+
+                    </div>
+                    <span class="name">Nguyễn Quang Huy</span>
+                    <div class="dot_icon">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="choices none">
+                        <div class="button button_edit">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.363 8.464L19.796 9.895L7.12598 22.564L0.000976562 24L1.43998 16.873L14.105 4.205L15.536 5.636L3.28098 17.86L2.55498 21.444L6.13898 20.721L18.363 8.464ZM18.307 0L15.492 2.817L21.183 8.509L24 5.688L18.307 0V0ZM5.98898 18.718L17.302 7.402L16.597 6.695L5.28398 18.009L5.98898 18.718Z" fill="black"/>
+                                        </svg>
+
+                            <span>Edit</span>
+                        </div>
+                        <div class="button button_remove">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.662 23L0.293 17.635C0.098 17.44 0 17.185 0 16.928C0 16.672 0.098 16.416 0.293 16.221L15.222 1.293C15.417 1.099 15.673 1 15.929 1C16.184 1 16.441 1.099 16.636 1.293L23.707 8.366C23.903 8.561 24 8.817 24 9.074C24 9.33 23.903 9.585 23.707 9.781L12.491 21H18.005V23H5.662ZM9.319 21L3.833 15.514L2.414 16.928L6.49 21H9.319ZM15.924 3.419L5.247 14.099L10.905 19.758L21.581 9.076L15.924 3.419Z" fill="black"/>
+                                        </svg>
+
+                            <span>Remove</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="cmt_cont">bài viết thật hữu ích</p>
+            </div>
+            <div class="cmt">
+                <div class="user">
+                    <div class="avat_img">
+                        <img src="img/avatar.jpg" alt="avatar" srcset="">
+
+                    </div>
+                    <span class="name">Nguyễn Quang Huy</span>
+                    <div class="dot_icon">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="choices none">
+                        <div class="button button_edit">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.363 8.464L19.796 9.895L7.12598 22.564L0.000976562 24L1.43998 16.873L14.105 4.205L15.536 5.636L3.28098 17.86L2.55498 21.444L6.13898 20.721L18.363 8.464ZM18.307 0L15.492 2.817L21.183 8.509L24 5.688L18.307 0V0ZM5.98898 18.718L17.302 7.402L16.597 6.695L5.28398 18.009L5.98898 18.718Z" fill="black"/>
+                                        </svg>
+
+                            <span>Edit</span>
+                        </div>
+                        <div class="button button_remove">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.662 23L0.293 17.635C0.098 17.44 0 17.185 0 16.928C0 16.672 0.098 16.416 0.293 16.221L15.222 1.293C15.417 1.099 15.673 1 15.929 1C16.184 1 16.441 1.099 16.636 1.293L23.707 8.366C23.903 8.561 24 8.817 24 9.074C24 9.33 23.903 9.585 23.707 9.781L12.491 21H18.005V23H5.662ZM9.319 21L3.833 15.514L2.414 16.928L6.49 21H9.319ZM15.924 3.419L5.247 14.099L10.905 19.758L21.581 9.076L15.924 3.419Z" fill="black"/>
+                                        </svg>
+
+                            <span>Remove</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="cmt_cont">bài viết thật hữu ích</p>
+            </div>
+            <div class="cmt">
+                <div class="user">
+                    <div class="avat_img">
+                        <img src="img/avatar.jpg" alt="avatar" srcset="">
+
+                    </div>
+                    <span class="name">Nguyễn Quang Huy</span>
+                    <div class="dot_icon">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="choices none">
+                        <div class="button button_edit">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.363 8.464L19.796 9.895L7.12598 22.564L0.000976562 24L1.43998 16.873L14.105 4.205L15.536 5.636L3.28098 17.86L2.55498 21.444L6.13898 20.721L18.363 8.464ZM18.307 0L15.492 2.817L21.183 8.509L24 5.688L18.307 0V0ZM5.98898 18.718L17.302 7.402L16.597 6.695L5.28398 18.009L5.98898 18.718Z" fill="black"/>
+                                        </svg>
+
+                            <span>Edit</span>
+                        </div>
+                        <div class="button button_remove">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.662 23L0.293 17.635C0.098 17.44 0 17.185 0 16.928C0 16.672 0.098 16.416 0.293 16.221L15.222 1.293C15.417 1.099 15.673 1 15.929 1C16.184 1 16.441 1.099 16.636 1.293L23.707 8.366C23.903 8.561 24 8.817 24 9.074C24 9.33 23.903 9.585 23.707 9.781L12.491 21H18.005V23H5.662ZM9.319 21L3.833 15.514L2.414 16.928L6.49 21H9.319ZM15.924 3.419L5.247 14.099L10.905 19.758L21.581 9.076L15.924 3.419Z" fill="black"/>
+                                        </svg>
+
+                            <span>Remove</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="cmt_cont">bài viết thật hữu ích</p>
+            </div>
+            <div class="cmt">
+                <div class="user">
+                    <div class="avat_img">
+                        <img src="img/avatar.jpg" alt="avatar" srcset="">
+
+                    </div>
+                    <span class="name">Nguyễn Quang Huy</span>
+                    <div class="dot_icon">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="choices none">
+                        <div class="button button_edit">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.363 8.464L19.796 9.895L7.12598 22.564L0.000976562 24L1.43998 16.873L14.105 4.205L15.536 5.636L3.28098 17.86L2.55498 21.444L6.13898 20.721L18.363 8.464ZM18.307 0L15.492 2.817L21.183 8.509L24 5.688L18.307 0V0ZM5.98898 18.718L17.302 7.402L16.597 6.695L5.28398 18.009L5.98898 18.718Z" fill="black"/>
+                                        </svg>
+
+                            <span>Edit</span>
+                        </div>
+                        <div class="button button_remove">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.662 23L0.293 17.635C0.098 17.44 0 17.185 0 16.928C0 16.672 0.098 16.416 0.293 16.221L15.222 1.293C15.417 1.099 15.673 1 15.929 1C16.184 1 16.441 1.099 16.636 1.293L23.707 8.366C23.903 8.561 24 8.817 24 9.074C24 9.33 23.903 9.585 23.707 9.781L12.491 21H18.005V23H5.662ZM9.319 21L3.833 15.514L2.414 16.928L6.49 21H9.319ZM15.924 3.419L5.247 14.099L10.905 19.758L21.581 9.076L15.924 3.419Z" fill="black"/>
+                                        </svg>
+
+                            <span>Remove</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="cmt_cont">bài viết thật hữu ích</p>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+
+        <div class="dis_login ">
+            <p>to act the next task<br> PLEASE</p>
+            <div class="log_in button_login">
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+            </div>
+        </div>
+        <div class="user_frame none">
+            <div class="user">
+                <div class="avat_img">
+                    <img src="" alt="avatar" srcset="">
+
+                </div>
+                <span class="name"></span>
+            </div>
+            <div class="buttons ">
+
+                <button class="button button_post">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 28H8C7.73478 28 7.48043 27.8946 7.29289 27.7071C7.10536 27.5196 7 27.2652 7 27V4C7 3.73478 7.10536 3.48043 7.29289 3.29289C7.48043 3.10536 7.73478 3 8 3H24C24.2652 3 24.5196 3.10536 24.7071 3.29289C24.8946 3.48043 25 3.73478 25 4V10.17C25 10.4352 24.8946 10.6896 24.7071 10.8771C24.5196 11.0646 24.2652 11.17 24 11.17C23.7348 11.17 23.4804 11.0646 23.2929 10.8771C23.1054 10.6896 23 10.4352 23 10.17V5H9V26H23V15.83C23 15.5648 23.1054 15.3104 23.2929 15.1229C23.4804 14.9354 23.7348 14.83 24 14.83C24.2652 14.83 24.5196 14.9354 24.7071 15.1229C24.8946 15.3104 25 15.5648 25 15.83V27C25 27.2652 24.8946 27.5196 24.7071 27.7071C24.5196 27.8946 24.2652 28 24 28Z" fill="#2E3192"/>
+                                <path d="M16.343 21.657C16.1946 21.6571 16.048 21.6243 15.9139 21.5608C15.7798 21.4973 15.6615 21.4048 15.5676 21.2899C15.4737 21.175 15.4065 21.0407 15.3709 20.8966C15.3354 20.7525 15.3323 20.6023 15.362 20.457L16.069 16.921C16.1079 16.7273 16.2032 16.5495 16.343 16.41L25.535 7.21796C25.7225 7.03049 25.9768 6.92517 26.242 6.92517C26.5072 6.92517 26.7615 7.03049 26.949 7.21796L29.778 10.047C29.9655 10.2345 30.0708 10.4888 30.0708 10.754C30.0708 11.0191 29.9655 11.2734 29.778 11.461L20.586 20.653C20.4465 20.7928 20.2687 20.8881 20.075 20.927L16.539 21.634C16.4745 21.6476 16.4089 21.6553 16.343 21.657ZM17.971 17.614L17.617 19.383L19.386 19.029L27.657 10.758L26.242 9.34296L17.971 17.614Z" fill="#FF931E"/>
+                                <path d="M18 9H12C11.7348 9 11.4804 8.89464 11.2929 8.70711C11.1054 8.51957 11 8.26522 11 8C11 7.73478 11.1054 7.48043 11.2929 7.29289C11.4804 7.10536 11.7348 7 12 7H18C18.2652 7 18.5196 7.10536 18.7071 7.29289C18.8946 7.48043 19 7.73478 19 8C19 8.26522 18.8946 8.51957 18.7071 8.70711C18.5196 8.89464 18.2652 9 18 9Z" fill="#2E3192"/>
+                                <path d="M16 13H12C11.7348 13 11.4804 12.8946 11.2929 12.7071C11.1054 12.5196 11 12.2652 11 12C11 11.7348 11.1054 11.4804 11.2929 11.2929C11.4804 11.1054 11.7348 11 12 11H16C16.2652 11 16.5196 11.1054 16.7071 11.2929C16.8946 11.4804 17 11.7348 17 12C17 12.2652 16.8946 12.5196 16.7071 12.7071C16.5196 12.8946 16.2652 13 16 13Z" fill="#2E3192"/>
+                                </svg>
+                        <span>POST</span>
+                    </button>
+                <button class="button button_user">
+                        <svg width="32" height="32" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                    <path d="M23 3.83333C28.2843 3.83333 32.5833 8.13242 32.5833 13.4186C32.5833 18.7009 28.2843 23.0019 23 23.0019C17.7157 23.0019 13.4167 18.7009 13.4167 13.4186C13.4167 8.13242 17.7157 3.83333 23 3.83333ZM23 0C15.5902 0 9.58333 6.00683 9.58333 13.4186C9.58333 20.8265 15.5902 26.8353 23 26.8353C30.4098 26.8353 36.4167 20.8265 36.4167 13.4186C36.4167 6.00683 30.4098 0 23 0V0ZM35.2072 25.5932C34.2547 26.5477 33.1813 27.3777 32.0294 28.0887C37.5341 31.6806 40.4206 37.8312 41.5591 42.1686H4.40067C5.497 37.7794 8.34517 31.6212 13.9323 28.0657C12.7765 27.3489 11.7051 26.5113 10.7544 25.5511C2.59325 31.4391 0 41.8542 0 46H46C46 41.8945 43.24 31.5157 35.2072 25.5932Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0">
+                                    <rect width="46" height="46" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                        <span>User</span>
+
+                    </button>
+                <button class="button button_main">
+                        
+                        <span>Main</span>
+                    </button>
+            </div>
+            <div class="icon_logout">
+                <a href="" onclick="signOut();">
+                    <svg width="40" height="40" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.4167 9.80004L13.5031 12.5L10.4167 15.2V13.5417H2.08333V11.4584H10.4167V9.80004ZM8.33333 5.20837V9.37504H0V15.625H8.33333V19.7917L16.6667 12.5L8.33333 5.20837ZM14.5833 2.08337C12.7219 2.08337 10.9792 2.57712 9.46771 3.43233L9.70521 3.64067L11.1594 4.91254C12.2052 4.43754 13.3615 4.16671 14.5833 4.16671C19.1781 4.16671 22.9167 7.90525 22.9167 12.5C22.9167 17.0948 19.1781 20.8334 14.5833 20.8334C13.3615 20.8334 12.2052 20.5625 11.1583 20.0886L9.70417 21.3605L9.46667 21.5688C10.9792 22.423 12.7219 22.9167 14.5833 22.9167C20.3354 22.9167 25 18.2532 25 12.5C25 6.74692 20.3354 2.08337 14.5833 2.08337Z" fill="black"/>
+                            </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    <div class="share_screen">
+        <div class="cancle">
+            <span>X</span>
+        </div>
+        <div class="foundation">
+            <div class="user">
+                <svg width="54" height="54" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                    <path d="M23 3.83333C28.2843 3.83333 32.5833 8.13242 32.5833 13.4186C32.5833 18.7009 28.2843 23.0019 23 23.0019C17.7157 23.0019 13.4167 18.7009 13.4167 13.4186C13.4167 8.13242 17.7157 3.83333 23 3.83333ZM23 0C15.5902 0 9.58333 6.00683 9.58333 13.4186C9.58333 20.8265 15.5902 26.8353 23 26.8353C30.4098 26.8353 36.4167 20.8265 36.4167 13.4186C36.4167 6.00683 30.4098 0 23 0V0ZM35.2072 25.5932C34.2547 26.5477 33.1813 27.3777 32.0294 28.0887C37.5341 31.6806 40.4206 37.8312 41.5591 42.1686H4.40067C5.497 37.7794 8.34517 31.6212 13.9323 28.0657C12.7765 27.3489 11.7051 26.5113 10.7544 25.5511C2.59325 31.4391 0 41.8542 0 46H46C46 41.8945 43.24 31.5157 35.2072 25.5932Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="54" height="54" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+
+            </div>
+            <div class="fb">
+                <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.5 0C12.3131 0 0 12.3131 0 27.5C0 42.6869 12.3131 55 27.5 55C42.6869 55 55 42.6869 55 27.5C55 12.3131 42.6869 0 27.5 0ZM34.375 18.3333H31.2812C30.0483 18.3333 29.7917 18.8398 29.7917 20.1163V22.9167H34.375L33.896 27.5H29.7917V43.5417H22.9167V27.5H18.3333V22.9167H22.9167V17.6275C22.9167 13.5735 25.0502 11.4583 29.8581 11.4583H34.375V18.3333Z" fill="#2BB7D6"/>
+                    </svg>
+
+            </div>
+        </div>
+        <div class="notification">
+            <p>Please log in before sharing!!!</p>
+        </div>
+
+    </div>
+    <div class="share_screen fill_temp">
+        <div class="cancle">
+            <span>X</span>
+        </div>
+
+        <div class="notification">
+            <p>Enter TEMPERTURE to update your status</p>
+        </div>
+
+    </div>
+    <div class="share_screen fill_required">
+        <div class="cancle">
+            <span>X</span>
+        </div>
+
+        <div class="notification">
+            <p>Fill in all <span class="required">required</span> field</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script src="js/social.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>

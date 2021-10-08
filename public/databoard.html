@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ncovi-map</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/databoard.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="main_screen">
+        <div class="logo">
+            <img src="img/logo.png" alt="" srcset="">
+        </div>
+
+        <div class="copyright">
+            <img src="img/Copyright.png" alt="" srcset="">
+        </div>
+        <div class="stat">
+            <h1>Bảng số liệu các ca mắc</h1>
+            <label for="filter">Thứ tự :</label>
+
+            <select id="filter">
+                <option value="A->Z">A->Z</option>
+                <option value="Z->A">Z->A</option>
+                <option value="Tử vong">Tử vong</option>
+                <option value="Tổng ca">Tổng ca</option>
+            </select>
+
+        </div>
+        <div class="search">
+            <h3>Tìm kiếm</h3>
+            <label for="search_filter"></label>
+
+            <select id="search_filter">
+                <option value="TPHCM">TPHCM</option>
+                <option value="BRVT">BRVT</option>
+                <option value="BRVT">BRVT</option>
+                <option value="BRVT">BRVT</option>
+                <option value="BRVT">BRVT</option>
+            </select>
+            <form class="search_result">
+                <h4>Ca mắc mới</h4>
+                <p class="show_data data_1">3</p>
+                <h4>Tử vong</h4>
+                <p class="show_data data_1">3</p>
+                <h4>Tổng</h4>
+                <p class="show_data data_1">3</p>
+            </form>
+            <div class="button button_reset">
+                <button type="reset" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="icon_return">
+            <a href="index.html">
+                <svg width="63" height="40" viewBox="0 0 63 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M56.3684 6.66669V16.6667H12.6994L22.2489 7.06669C23.542 5.76669 23.542 3.66669 22.2489 2.36669C20.9557 1.06669 18.8668 1.06669 17.5736 2.36669L2.35415 17.6667C1.06099 18.9667 1.06099 21.0667 2.35415 22.3667L17.5736 37.6667C18.8668 38.9667 20.9557 38.9667 22.2489 37.6667C23.542 36.3667 23.542 34.2667 22.2489 32.9667L12.6994 23.3334H59.6841C61.5078 23.3334 62.9999 21.8334 62.9999 20V6.66669C62.9999 4.83336 61.5078 3.33336 59.6841 3.33336C57.8605 3.33336 56.3684 4.83336 56.3684 6.66669Z" fill="#1D1D1D"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="63" height="40" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </a>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script src="js/databoard.js"></script>
+<script src="js/algo.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>

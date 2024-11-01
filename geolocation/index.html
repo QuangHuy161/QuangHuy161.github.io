@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Geolocation</title>
+</head>
+<body>
+    <h2>Click the button to share your location:</h2>
+    <button onclick="getLocation()">Get Location</button>
+
+    <p id="status">Waiting for location...</p>
+    <p id="latitude"></p>
+    <p id="longitude"></p>
+
+    <script>
+        function getLocation() {
+            // Check if geolocation is supported
+            if (navigator.geolocation) {
+                // Request the user's current position
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+                document.getElementById("status").textContent = "Requesting location...";
+            } else {
+                document.getElementById("status").textContent = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            // Display the latitude and longitude
+            document.getElementById("status").textContent = "Location retrieved successfully!";
+            document.getElementById("latitude").textContent = "Latitude: " + position.coords.latitude;
+            document.getElementById("longitude").textContent = "Longitude: " + position.coords.longitude;
+        }
+
+        function showError(error) {
+            // Handle errors
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    document.getElementById("status").textContent = "User denied the request for Geolocation.";
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    document.getElementById("status").textContent = "Location information is unavailable.";
+                    break;
+                case error.TIMEOUT:
+                    document.getElementById("status").textContent = "The request to get user location timed out.";
+                    break;
+                case error.UNKNOWN_ERROR:
+                    document.getElementById("status").textContent = "An unknown error occurred.";
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

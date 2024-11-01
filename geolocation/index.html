@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Geolocation</title>
+    <title>Get Location and Show on Google Maps</title>
 </head>
 <body>
     <h2>Click the button to share your location:</h2>
@@ -13,11 +13,22 @@
     <p id="latitude"></p>
     <p id="longitude"></p>
 
+    <!-- Google Maps iframe to display the location -->
+    <div id="map" style="margin-top:20px;">
+        <iframe
+            id="googleMapFrame"
+            width="100%"
+            height="400"
+            style="border:0"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
     <script>
         function getLocation() {
-            // Check if geolocation is supported
             if (navigator.geolocation) {
-                // Request the user's current position
                 navigator.geolocation.getCurrentPosition(showPosition, showError);
                 document.getElementById("status").textContent = "Requesting location...";
             } else {
@@ -26,14 +37,19 @@
         }
 
         function showPosition(position) {
-            // Display the latitude and longitude
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+
             document.getElementById("status").textContent = "Location retrieved successfully!";
-            document.getElementById("latitude").textContent = "Latitude: " + position.coords.latitude;
-            document.getElementById("longitude").textContent = "Longitude: " + position.coords.longitude;
+            document.getElementById("latitude").textContent = "Latitude: " + latitude;
+            document.getElementById("longitude").textContent = "Longitude: " + longitude;
+
+            // Update the Google Maps iframe with the user's location
+            const googleMapUrl = `https://www.google.com/maps/embed/v1/view?key=01B6D5-0A048C-1A5607&center=${latitude},${longitude}&zoom=14&maptype=satellite`;
+            document.getElementById("googleMapFrame").src = googleMapUrl;
         }
 
         function showError(error) {
-            // Handle errors
             switch(error.code) {
                 case error.PERMISSION_DENIED:
                     document.getElementById("status").textContent = "User denied the request for Geolocation.";

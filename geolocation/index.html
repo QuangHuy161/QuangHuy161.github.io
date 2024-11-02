@@ -36,7 +36,7 @@
         
         function getLocation() {
             if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition, showError);
+                navigator.geolocation.getCurrentPosition(showPosition, showError, { enableHighAccuracy: true } );
                 document.getElementById("status").textContent = "Requesting location...";
             } else {
                 document.getElementById("status").textContent = "Geolocation is not supported by this browser.";

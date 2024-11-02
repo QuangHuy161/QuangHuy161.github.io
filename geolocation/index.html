@@ -13,20 +13,19 @@
     <p id="latitude"></p>
     <p id="longitude"></p>
 
-    <!-- Google Maps iframe to display the location -->
-    <div id="map" style="margin-top:20px;">
-        <iframe
-            id="googleMapFrame"
-            width="100%"
-            height="400"
-            style="border:0"
-            loading="lazy"
-            allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
+    <h3>My Current Location Map</h3>
+    <div id="map"></div>
 
     <script>
+        // Initialize the map with a default location in case geolocation fails
+        const map = L.map('map').setView([51.505, -0.09], 13); // Default to London
+    
+        // Load and display a tile layer from OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        
         function getLocation() {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(showPosition, showError);
@@ -44,10 +43,14 @@
             document.getElementById("latitude").textContent = "Latitude: " + latitude;
             document.getElementById("longitude").textContent = "Longitude: " + longitude;
 
-            // Update the Google Maps iframe with the user's location
-            const googleMapUrl = `https://www.google.com/maps/embed/v1/view?key=01B6D5-0A048C-1A5607&center=${latitude},${longitude}&zoom=14&maptype=satellite`;
-            document.getElementById("googleMapFrame").src = googleMapUrl;
-        }
+            // Set map view to the user's location
+            map.setView([latitude, longitude], 13);
+    
+            // Add a marker at the user's location
+            L.marker([latitude, longitude]).addTo(map)
+              .bindPopup('You are here!')
+              .openPopup();
+            }
 
         function showError(error) {
             switch(error.code) {
